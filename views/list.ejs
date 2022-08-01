@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Today's day</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="/user/logout">Logout </a>
+</div>
+
+
+  <body>
+    <div class="box" id="heading">
+        <h1><%=dayName%></h1>
+    </div>
+  <div class="box" >
+    <%for(var i = 0; i < newListItems.length; i++){%>
+      <div class="item">
+        <input type="checkbox">
+        <p><%= newListItems[i] %></p>
+      </div>
+
+    <%}%>
+
+  </div>
+
+
+    <form class="box" action="/" method="post">
+      <input type="text" name="todo_new" value="" placeholder="Add new" autocomplete="off">
+      <button type="Submit" name="button">+</button>
+    </form>
+
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+  </ul>
+
+  </body>
+</html>

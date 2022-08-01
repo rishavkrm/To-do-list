@@ -1,0 +1,32 @@
+<%-include('partials/header')%>
+                <form class="form" method="post">
+                    <input type="text" placeholder="Email" name="email">
+                    <button type="submit" id="login-button">Submit</button>
+                </form>
+            </div>
+
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+         $("#login-button").click(function(event){
+		 event.preventDefault();
+	 
+	 $('form').fadeOut(500);
+	 $('.wrapper').addClass('form-success');
+});
+    </script>
+  </body>
+</html>

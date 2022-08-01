@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Today's day</title>
+    <link rel="stylesheet" href="./../public/login.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <p class="navbar-brand">TO DO LIST</p>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- 6 -->
+                <li id="todo"><a href="/">HOME</a></li>
+                <li id="loginORlogout">
+                    <a href="user/<%=loginORlogout%>">
+                        <%=loginORlogout%>
+                    </a>
+                </li> 
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="wrapper">
+            <div class="container">
+                <h1>Welcome</h1>
+
+                <form class="form" method="post">
+                    <input type="text" placeholder="Email" name="email">
+                    <input type="password" placeholder="Password" name="password">
+                    <button type="submit" id="login-button">Login</button>
+                </form>
+            </div>
+
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+  </body>
+</html>

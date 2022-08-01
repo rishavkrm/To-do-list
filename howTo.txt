@@ -1,0 +1,25 @@
+New things in this module:
+1. Using ejs to templating
+What we did (New):
+  --> Made templates with ejs
+  --> Using <%= varName %> tags, and res.render in app.js,
+  we can change the value of that variable dynamically
+
+  For making to-do list,
+  we made an empty list first in global scope
+  the we got the response from client/browser by making a form and posting the response to "/"
+
+  We parsed the response using bodyParser(res.body.{var-name}) and
+  appended the result in the list.
+  We got redirected to "/" route then.
+  Now for templating we made a .ejs file and in that we used for loops to go through each
+  element of the list.
+  We used <%= %> tag to render the value of the list from "/" route in app.js
+
+
+Things to take care of:
+1. using app.set("view engine","ejs");
+2. Since our app runs on server it cannot just use local files, we have to make a dedicated
+  folder for that say named "public" ,directory of files inside which will be seen by the
+  programs same as that of others and we have to use app.use(express.static("public")) for getting that.
+3. For using basic js(loops, if/else etc) inside our .ejs, we have to use <% %> tag.

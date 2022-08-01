@@ -1,0 +1,41 @@
+<%-include('partials/header')%>
+<h1>Welcome Back!</h1>                
+<form class="form" method="post">
+                    <input type="text" placeholder="Email" name="email">
+                    <input type="password" placeholder="Password" name="password">
+                    <button type="submit" id="login-button">Login</button>
+
+                </form>
+                <div class="instead">
+                    <p>Don't have an account? <a href="signup" type="button">Register</a></p>
+                    <p>Forgot password? <a href="forgotPassword" type="button">Forgot</a></p>
+                    
+                </div>
+                
+            </div>
+
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+         $("#login-button").click(function(event){
+		 event.preventDefault();
+	 
+	 $('form').fadeOut(500);
+	 $('.wrapper').addClass('form-success');
+});
+    </script>
+  </body>
+</html>
